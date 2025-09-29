@@ -3,8 +3,11 @@
 
 [build]
   command = "bun run build"
-  publish = "out"
+  publish = ".next"
 
 [build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NETLIFY_NEXT_PLUGIN_SKIP = "false"
   BUN_VERSION = "1.1.20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
