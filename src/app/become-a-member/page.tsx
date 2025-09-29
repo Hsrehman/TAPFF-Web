@@ -43,8 +43,8 @@ export default function BecomeMemberPage() {
     <main className="min-h-screen bg-white">
       {/* Hero */}
       <section className="relative overflow-hidden bg-gray-50">
-        <div className="pointer-events-none absolute -top-20 right-1/3 w-[28rem] h-[28rem] bg-red-500/5 rounded-full blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-20 left-1/4 w-[24rem] h-[24rem] bg-green-500/5 rounded-full blur-3xl" />
+        <div className="hidden sm:block pointer-events-none absolute -top-20 right-1/3 w-[28rem] h-[28rem] bg-red-500/5 rounded-full blur-3xl" />
+        <div className="hidden sm:block pointer-events-none absolute -bottom-20 left-1/4 w-[24rem] h-[24rem] bg-green-500/5 rounded-full blur-3xl" />
         <div className="container mx-auto px-4 py-16 md:py-20 relative">
           <Breadcrumbs />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Become a Member</h1>

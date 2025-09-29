@@ -92,20 +92,20 @@ export default function Home() {
                 className="h-auto w-30 md:w-44 lg:w-38 drop-shadow-xl"
               />
             </div>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               <span className="block text-green-400"></span>
-              <span className="block mb-3 text-[3.75rem]">Türkiye–Azerbaijan–Pakistan</span>
-              <span className="block mb-8 text-[3.25rem]">Friendship Forum (TAPFF)</span>
+              <span className="block mb-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">Türkiye–Azerbaijan–Pakistan</span>
+              <span className="block mb-8 text-2xl sm:text-4xl md:text-5xl">Friendship Forum (TAPFF)</span>
               <span className="block text-red-400 text-lg lg:text-xl font-light mt-6">Let us work together — For Peace, Progress, and Brotherhood</span>
             </h1>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <a href="#membership">
-                <Button className="bg-red-600 hover:bg-red-700 text-lg px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-white/60">
+                <Button className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 focus-visible:ring-2 focus-visible:ring-white/60">
                   Become a Member
                 </Button>
               </a>
-              <a href="/events">
-                <Button variant="outline" className="!bg-transparent border-white text-white hover:bg-white/20 hover:text-white text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-white/60">
+              <a href="#events">
+                <Button variant="outline" className="w-full sm:w-auto !bg-transparent border-white text-white hover:bg-white/20 hover:text-white text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 focus-visible:ring-2 focus-visible:ring-white/60">
                   Upcoming Events
                 </Button>
               </a>
@@ -406,14 +406,14 @@ export default function Home() {
                     <Clock className="w-4 h-4 mr-2" /> More details soon
                   </div>
                   <div className="mt-auto pt-4 border-t border-gray-200">
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-0 sm:justify-between">
                       <a href={`/events/${ev.title.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')}`}>
-                        <Button variant="ghost" className="group justify-between px-0 h-auto text-gray-700 hover:bg-transparent">
+                        <Button variant="ghost" className="w-full sm:w-auto group justify-between px-0 h-auto text-gray-700 hover:bg-transparent">
                           <span className="font-medium">Details</span>
                           <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-0.5" />
                         </Button>
                       </a>
-                      <EventInterest eventTitle={ev.title} />
+                      <EventInterest eventTitle={ev.title} triggerClassName="w-full sm:w-auto" />
                     </div>
                   </div>
                 </CardContent>

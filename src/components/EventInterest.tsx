@@ -25,10 +25,10 @@ export default function EventInterest({ eventTitle, eventSlug, triggerClassName 
   return (
     <>
       <div className={triggerClassName}>
-        <div className="flex gap-2">
-          <Button variant="outline" className="border-gray-300" onClick={() => { setIntent("interested"); setOpen(true) }}>Interested</Button>
-          <Button className="bg-red-600 hover:bg-red-700" onClick={() => { setIntent("attend"); setOpen(true) }}>Attend</Button>
-          <Button variant="ghost" onClick={() => { setIntent("volunteer"); setOpen(true) }}>Volunteer</Button>
+        <div className="grid grid-cols-1 sm:flex sm:gap-2 gap-2 w-full">
+          <Button variant="outline" className="w-full sm:w-auto border-gray-300" onClick={() => { setIntent("interested"); setOpen(true) }}>Interested</Button>
+          <Button className="w-full sm:w-auto bg-red-600 hover:bg-red-700" onClick={() => { setIntent("attend"); setOpen(true) }}>Attend</Button>
+          <Button variant="ghost" className="w-full sm:w-auto" onClick={() => { setIntent("volunteer"); setOpen(true) }}>Volunteer</Button>
         </div>
       </div>
 

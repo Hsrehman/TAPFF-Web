@@ -51,8 +51,8 @@ export default function SiteHeader() {
       {/* Main Header */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-start space-x-4">
-            <div className="w-16 h-16">
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 md:w-16 md:h-16">
               <Image
                 src="/hero-logo.png"
                 alt="TAPFF Logo"
@@ -62,7 +62,7 @@ export default function SiteHeader() {
                 priority
               />
             </div>
-            <h1 className="text-2xl font-bold text-gray-800 mt-10">TAPFF</h1>
+            <h1 className="text-xl md:text-2xl font-bold text-gray-800">TAPFF</h1>
           </div>
 
           <nav className="hidden lg:flex space-x-6">
