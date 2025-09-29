@@ -51,7 +51,7 @@ export default function SiteHeader() {
       {/* Main Header */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <a href="/" aria-label="Home" className="flex items-center space-x-3">
             <div className="w-12 h-12 md:w-16 md:h-16">
               <Image
                 src="/hero-logo.png"
@@ -63,7 +63,7 @@ export default function SiteHeader() {
               />
             </div>
             <h1 className="text-xl md:text-2xl font-bold text-gray-800">TAPFF</h1>
-          </div>
+          </a>
 
           <nav className="hidden lg:flex space-x-6">
             <a href="/" className={linkClass(isHome && !activeSection)}>HOME</a>
